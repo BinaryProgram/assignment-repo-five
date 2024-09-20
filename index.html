@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Ticket</title>
+    <title>E~Ticket</title>
     <!-- tailwind and daisy UI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -32,7 +32,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "common-color": "#030712",
+              "text-color": "#030712",
+              "green-color": "#1dd100",
             },
           },
         },
@@ -89,7 +90,7 @@
             </ul>
           </div>
           <a
-            class="btn btn-ghost text-common-color font-[raleway] text-3xl font-extrabold hover:bg-transparent lg:text-4xl"
+            class="btn btn-ghost text-text-color font-[raleway] text-3xl font-extrabold hover:bg-transparent lg:text-4xl"
             >E-Ticket</a
           >
         </div>
@@ -125,6 +126,90 @@
           ></a>
         </div>
       </div>
+      <div
+        class="hero mt-12 min-h-screen space-y-14 rounded-3xl bg-[linear-gradient(180deg,rgba(3,7,18,0.5),rgba(3,7,18,0.0)),url('./images/banner.png')]"
+      >
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-fit">
+            <h1 class="mb-5 font-[raleway] text-4xl font-bold lg:text-7xl">
+              <span class="lg:[leading-[86px] leading-[50px] text-white"
+                >End-to-End Travel with</span
+              >
+              <br />
+              <span class="text-green-color leading-[50px] lg:leading-[86px]"
+                >E Paribahan</span
+              >
+            </h1>
+            <p class="mb-5 font-[inter] text-lg leading-8 text-white">
+              E-Traveler is a cutting-edge digital platform designed to simplify
+              travel management for users. From booking tickets to organizing
+              itineraries, E-Traveler offers a seamless experience with features
+              like real-time ticket updates, easy cancellations, and
+              personalized travel suggestions.
+            </p>
+            <a
+              class="btn bg-green-color hover:bg-green-color text-common-green h- rounded-xl border-none font-[raleway] text-xl font-bold"
+              >Buy Tickets
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+      <section class="static mt-10 lg:relative">
+        <div
+          class="flex flex-col items-center justify-center gap-10 lg:flex-row"
+        >
+          <div
+            class="card card-side bg-base-100 border-green-color rounded-3xl border-b-2 p-5 shadow-xl"
+          >
+            <figure>
+              <img src="./images/people.png" alt="Movie" />
+            </figure>
+            <div class="card-body grow">
+              <h2
+                class="card-title text-text-color font-[inter] text-4xl font-bold"
+              >
+                500K+
+              </h2>
+              <p class="font-[inter] text-lg text-[#03071299]">
+                Registered users
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-side bg-base-100 border-green-color rounded-3xl border-b-2 p-5 shadow-xl"
+          >
+            <figure class="text-center">
+              <img src="./images/ticket-cupon.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="card-title text-text-color font-[inter] text-4xl font-bold"
+              >
+                1.7 lacks+
+              </h2>
+              <p class="font-[inter] text-lg text-[#03071299]">Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="card card-side bg-base-100 border-green-color rounded-3xl border-b-2 p-5 shadow-xl"
+          >
+            <figure class="text-center">
+              <img src="./images/stoppage.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="card-title text-text-color font-[inter] text-4xl font-bold"
+              >
+                80K+
+              </h2>
+              <p class="font-[inter] text-lg text-[#03071299]">
+                Rental partners
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- main content -->
     <main></main>
