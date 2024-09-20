@@ -41,7 +41,7 @@
     </script>
   </head>
 
-  <body>
+  <body class="container mx-auto">
     <!-- navigation Header -->
     <header>
       <div class="navbar bg-base-100">
@@ -155,17 +155,17 @@
         </div>
       </div>
       <!-- card -->
-      <section class="static mt-10 lg:relative">
+      <section class="mt-10 lg:-mt-16">
         <div
           class="flex flex-col items-center justify-center gap-10 lg:flex-row"
         >
           <div
-            class="card card-side bg-base-100 border-green-color rounded-3xl border-b-2 p-5 shadow-xl"
+            class="card card-side bg-base-100 border-green-color flex w-full justify-around gap-6 rounded-3xl border-b-2 p-6 shadow-xl lg:w-auto"
           >
             <figure>
               <img src="./images/people.png" alt="Movie" />
             </figure>
-            <div class="card-body grow">
+            <div>
               <h2
                 class="card-title text-text-color font-[inter] text-4xl font-bold"
               >
@@ -177,12 +177,12 @@
             </div>
           </div>
           <div
-            class="card card-side bg-base-100 border-green-color rounded-3xl border-b-2 p-5 shadow-xl"
+            class="card card-side bg-base-100 border-green-color flex w-full justify-around gap-6 rounded-3xl border-b-2 p-6 shadow-xl lg:w-auto"
           >
             <figure class="text-center">
               <img src="./images/ticket-cupon.png" alt="Movie" />
             </figure>
-            <div class="card-body">
+            <div>
               <h2
                 class="card-title text-text-color font-[inter] text-4xl font-bold"
               >
@@ -192,12 +192,12 @@
             </div>
           </div>
           <div
-            class="card card-side bg-base-100 border-green-color rounded-3xl border-b-2 p-5 shadow-xl"
+            class="card card-side bg-base-100 border-green-color flex w-full justify-around gap-6 rounded-3xl border-b-2 p-6 shadow-xl lg:w-auto"
           >
             <figure class="text-center">
               <img src="./images/stoppage.png" alt="Movie" />
             </figure>
-            <div class="card-body">
+            <div>
               <h2
                 class="card-title text-text-color font-[inter] text-4xl font-bold"
               >
@@ -212,7 +212,90 @@
       </section>
     </header>
     <!-- main content -->
-    <main></main>
+    <main class="mt-10 md:mt-16 lg:mt-32">
+
+      <!-- offer section -->
+      <section>
+        <h2
+          class="text-text-color text-center font-[raleway] text-3xl font-bold md:text-4xl lg:text-5xl"
+        >
+          Best offers for you
+        </h2>
+        <!-- coupon card -->
+        <div class="flex flex-col justify-evenly gap-6 lg:flex-row">
+          <div
+            class="mt-12 flex grow items-center justify-around rounded-3xl bg-[#ffbf0f] px-5"
+          >
+            <div class="leading-9">
+              <h1
+                class="font-[inter] text-3xl font-black text-[#030712cc] md:text-4xl lg:text-5xl"
+              >
+                15% OFF
+              </h1>
+              <h2 class="font-[inter] text-xl font-semibold text-[#030712cc]">
+                on your next purchase
+              </h2>
+              <h4
+                class="font-[inter] text-base font-medium text-[#03071280] lg:text-lg"
+              >
+                use by January 2024
+              </h4>
+            </div>
+            <figure>
+              <img src="./images/cupon-devider.png" alt="line" />
+            </figure>
+            <div class="leading-9">
+              <h1
+                class="text-text-color font-[raleway] text-2xl font-bold md:text-3xl lg:text-4xl"
+              >
+                NEW15
+              </h1>
+              <h4 class="font-[inter] text-xl font-medium text-[#03071266]">
+                Coupon Code
+              </h4>
+            </div>
+          </div>
+          <div
+            class="mt-12 flex grow items-center justify-around rounded-3xl bg-[#f78c9c] px-5"
+          >
+            <div class="leading-9">
+              <h1
+                class="font-[inter] text-3xl font-black text-[#030712cc] md:text-4xl lg:text-5xl"
+              >
+                20% OFF
+              </h1>
+              <h2 class="font-[inter] text-xl font-semibold text-[#030712cc]">
+                on your next purchase
+              </h2>
+              <h4
+                class="font-[inter] text-base font-medium text-[#03071280] lg:text-lg"
+              >
+                use by January 2024
+              </h4>
+            </div>
+            <figure>
+              <img src="./images/cupon-devider.png" alt="line" />
+            </figure>
+            <div class="leading-9">
+              <h1
+                class="text-text-color font-[raleway] text-2xl font-bold md:text-3xl lg:text-4xl"
+              >
+                Couple 20
+              </h1>
+              <h4 class="font-[inter] text-xl font-medium text-[#03071266]">
+                Coupon Code
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-20">
+          <a
+              class="btn rounded-xl border-[#1dd10066] bg-white hover:bg-white"
+              ><span class="font-[raleway] font-bold text-[#1dd100] text-xl">See All Offers</span>
+            </a>
+        </div>
+      </section>
+    </main>
     <!-- footer content -->
     <footer></footer>
     <script src="js/utility.js"></script>
