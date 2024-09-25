@@ -41,9 +41,9 @@
     </script>
   </head>
 
-  <body class="container mx-auto">
+  <body>
     <!-- navigation Header -->
-    <header>
+    <header class="container mx-auto">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -213,9 +213,8 @@
     </header>
     <!-- main content -->
     <main class="mt-10 md:mt-16 lg:mt-32">
-
       <!-- offer section -->
-      <section>
+      <section class="container mx-auto">
         <h2
           class="text-text-color text-center font-[raleway] text-3xl font-bold md:text-4xl lg:text-5xl"
         >
@@ -288,12 +287,87 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-20">
-          <a
-              class="btn rounded-xl border-[#1dd10066] bg-white hover:bg-white"
-              ><span class="font-[raleway] font-bold text-[#1dd100] text-xl">See All Offers</span>
-            </a>
+        <div class="mt-20 text-center">
+          <a class="btn rounded-xl border-[#1dd10066] bg-white hover:bg-white"
+            ><span class="font-[raleway] text-xl font-bold text-[#1dd100]"
+              >See All Offers</span
+            >
+          </a>
         </div>
+      </section>
+      <!-- Functional part -->
+      <section
+        class="border-green-color mt-64 rounded-[88px] border-t-2 bg-[#f7f8f8] p-8 lg:p-32"
+      >
+        <header class="space-y-6 text-center mx-auto w-full lg:w-1/2">
+          <h2 class="text-text-color font-[raleway] text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+            P.H Paribahan
+          </h2>
+          <p
+            class="text-center font-[inter] text-lg leading-8 text-[#03071299]"
+          >
+            P.H Traveler simplifies your journey with easy destination
+            selection, seat choice, and transparent pricing. Explore routes,
+            pick your ideal seat, and view real-time prices, all in one
+            streamlined process for a hassle-free booking experience.
+          </p>
+        </header>
+        <section class="bg-white flex  flex-col lg:flex-row justify-evenly mt-12 rounded-3xl">
+          <article class="flex justify-center flex-col gap-6">
+            <!-- bus -->
+            <div class="flex flex-col md:flex-row gap-3 lg:flex-row justify-between items-center">
+              <div class="flex items-center gap-3 flex-col md:flex-row lg:flex-row">
+                <figure>
+                  <img src="./images/bus-logo.png" alt="" />
+                </figure>
+                <div>
+                  <h2 class=" text-xl md:text-2xl lg:text-3xl font-bold font-[raleway] text-text-color">Greenline Paribahan</h2>
+                  <p class="font-[inter] text-sm md:text-base lg:text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div>
+                <a
+                  class="btn rounded-xl bg-[#1dd10026] hover:bg-white"
+                  ><span><img src="./images/seat-green.png" alt=""></span><span class="font-[inter] text-sm md:text-base lg:text-lg font-medium text-[#1dd100]"
+                    >40 Seats left</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- destination -->
+            <div class="bg-[#f7f8f8] p-8 rounded-3xl space-y-8">
+              <div class="flex justify-between">
+                <p class="text-lg font-semibold font-[raleway] text-[#03071299]">Route</p>
+                <p class="text-lg font-[raleway] font-semibold text-text-color">Dhaka - Sylhet</p>
+              </div>
+              <div class="border-t-2 border-dotted border-[#03071233]"></div>
+              <div class="flex justify-between">
+                <p class="text-lg font-semibold font-[raleway] text-[#03071299]">Departure Time</p>
+                <p class="text-lg font-[raleway] font-semibold text-text-color">9:00 PM</p>
+              </div>
+              <div class="border-t-2 border-dotted border-[#03071233]"></div>
+              <div class="flex gap-12 flex-col lg:flex-row">
+               <p class="bg-[#0307120d] p-4 text-[#030712cc] font-[inter] font-medium text-base rounded-xl">Boarding Point - Laxmipur</p>
+               <p class="bg-[#0307120d] p-4 text-[#030712cc] font-[inter] font-medium text-base rounded-xl">Dropping Point - Bogura</p>
+               <p class="bg-[#0307120d] p-4 text-[#030712cc] font-[inter] font-medium text-base rounded-xl">Est. Time - 11 Hour</p>
+              </div>
+            </div>
+          </article>
+          <article class="hidden lg:block">
+            <figure>
+              <img src="./images/info-devider.png" alt="divider" />
+            </figure>
+          </article>
+          <article class="flex flex-col items-center justify-center space-y-8">
+            <figure>
+              <img src="./images/fare.png" alt="taka">
+            </figure>
+            <div class="text-center space-y-2">
+              <h2 class="text-3xl font-bold font-[raleway] text-text-color">550 Taka</h2>
+              <h4 class="text-2xl font-semibold font-[raleway] text-[#03071299]">Per Seat</h4>
+            </div>
+          </article>
+        </section>
       </section>
     </main>
     <!-- footer content -->
