@@ -301,7 +301,7 @@
 
       <!-- Functional part -->
       <section
-        class="border-green-color mt-24 rounded-[88px] border-t-2 bg-[#f7f8f8] p-8 md:mt-32 lg:mt-40 lg:p-16"
+        class="border-green-color mt-24 rounded-[88px] border-t-2 bg-[#f7f8f8] p-4 md:mt-32 lg:mt-40 lg:p-16"
         id="buy-tickets"
       >
         <header class="mx-auto w-full space-y-6 text-center lg:w-1/2">
@@ -353,8 +353,8 @@
                   ><span><img src="./images/seat-green.png" alt="" /></span
                   ><span
                     class="font-[inter] text-sm font-medium text-[#1dd100] md:text-base lg:text-lg"
-                    ><span id="total-seats">40 </span>Seats left</span
-                  >
+                    ><span id="total-seats" class="mr-2">40 </span>Seats left
+                  </span>
                 </a>
               </div>
             </div>
@@ -810,9 +810,9 @@
               </h3>
               <div class="border-t-2 border-dotted border-[#03071233]"></div>
             </header>
-            <section class="mt-6 rounded-xl bg-[#e8e8e8f0] p-2 md:p-5 lg:p-5">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-1">
+            <section class="mt-6 rounded-xl bg-[#e8e8e8f0] p-5">
+              <div class="grid grid-cols-3 justify-items-stretch">
+                <div class="flex items-center gap-1 justify-self-center">
                   <h4
                     class="text-text-color font-[inter] text-base font-semibold"
                   >
@@ -825,12 +825,12 @@
                   </h5>
                 </div>
                 <h4
-                  class="text-text-color font-[inter] text-base font-semibold"
+                  class="text-text-color justify-self-center font-[inter] text-base font-semibold"
                 >
                   Class
                 </h4>
                 <h4
-                  class="text-text-color font-[inter] text-base font-semibold"
+                  class="text-text-color justify-self-center font-[inter] text-base font-semibold"
                 >
                   Price
                 </h4>
@@ -838,35 +838,26 @@
               <div
                 class="mt-4 border-t-2 border-dotted border-[#03071233]"
               ></div>
-              <div id="selected-tickets" class="mt-4">
-                <!-- <div class="flex items-center justify-between">
-                  <h4 class="font-[inter] text-base text-[#03071299]">C2</h4>
-                  <h4 class="font-[inter] text-base text-[#03071299]">
-                    Economoy
-                  </h4>
-                  <h4 class="font-[inter] text-base text-[#03071299]">550</h4>
-                </div> -->
-                <!-- <div class="flex items-center justify-between">
-                  <h4 class="font-[inter] text-base text-[#03071299]">C2</h4>
-                  <h4 class="font-[inter] text-base text-[#03071299]">
-                    Economoy
-                  </h4>
-                  <h4 class="font-[inter] text-base text-[#03071299]">550</h4>
-                </div> -->
-              </div>
+              <div id="selected-tickets" class="mt-4"></div>
+              <div class="mt-4 border-t border-solid border-[#03071233]"></div>
               <div
-                class="mt-4 border-t-2 border-dotted border-[#03071233]"
-              ></div>
-              <div id="price-part" class="mt-4 flex justify-between">
-                <h4 class="text-text-color font-[inter] text-base font-medium">
+                id="price-part"
+                class="mt-4 grid grid-cols-3 justify-items-stretch"
+              >
+                <h4
+                  class="text-text-color justify-self-center text-nowrap font-[inter] text-base font-medium"
+                >
                   Total Price
                 </h4>
-                <h4 class="text-text-color font-[inter] text-base font-medium">
+                <h4 class="invisible justify-self-center">None</h4>
+                <h4
+                  class="text-text-color justify-self-center font-[inter] text-base font-medium"
+                >
                   BDT <span id="total-price">0</span>
                 </h4>
               </div>
               <!-- apply coupon part with button -->
-              <div class="relative mt-4">
+              <div class="relative mx-auto mt-4 w-full md:w-5/6">
                 <input
                   type="text"
                   class="h-auto w-full flex-grow rounded-xl p-4 focus:outline-none"
@@ -874,16 +865,22 @@
                 />
                 <button
                   id="apply-button"
-                  class="absolute right-0 top-1/2 mr-2 w-16 -translate-y-1/2 transform rounded-lg bg-blue-500 p-2 font-[inter] text-base font-semibold text-white hover:bg-blue-600 sm:w-20 md:w-20 lg:w-20 xl:w-20"
+                  class="absolute right-0 top-1/2 mr-2 w-16 -translate-y-1/2 transform rounded-lg bg-blue-500 p-2 font-[inter] text-base font-semibold text-white transition duration-200 ease-in-out hover:bg-[#1dd100] disabled:bg-gray-300 disabled:text-gray-500 sm:w-20 md:w-20 lg:w-20 xl:w-20"
+                  disabled
                 >
                   Apply
                 </button>
               </div>
-              <div class="mt-6 flex justify-between">
-                <h4 class="text-text-color font-[inter] text-base font-medium">
+              <div class="mt-6 grid grid-cols-3 justify-items-stretch">
+                <h4
+                  class="text-text-color justify-self-center text-nowrap font-[inter] text-base font-medium"
+                >
                   Grand Total
                 </h4>
-                <h4 class="text-text-color font-[inter] text-base font-medium">
+                <h4 class="invisible justify-self-center"></h4>
+                <h4
+                  class="text-text-color justify-self-center font-[inter] text-base font-medium"
+                >
                   BDT <span id="garand-total">0</span>
                 </h4>
               </div>
@@ -928,12 +925,14 @@
                   placeholder="Enter your email id"
                 />
               </div>
-              <button
-                id="next-btn"
-                class="btn btn-block hover:bg-green-color mt-6 rounded-2xl font-[raleway] text-xl font-extrabold text-black hover:text-white"
-              >
-                Next
-              </button>
+              <a href="">
+                <button
+                  id="next-btn"
+                  class="btn btn-block hover:bg-green-color mt-6 rounded-2xl font-[raleway] text-xl font-extrabold text-black hover:text-white"
+                >
+                  Next
+                </button>
+              </a>
               <div class="mt-6 flex justify-around">
                 <a
                   class="hover:text-text-color font-[inter] text-base font-normal text-[#03071299] underline"
