@@ -159,7 +159,7 @@ function enableNext(cnt) {
     if (onlyNumber.indexOf(e.key) >= 0) {
       arr.push(e.key);
     }
-    
+
     if (cnt > 0 && arr.length > 0) {
       welcomeLink.classList.remove("pointer-events-none", "cursor-not-allowed");
       nextButton.classList.remove(
@@ -194,3 +194,22 @@ nextLink.addEventListener("click", function (e) {
   const footerPart = document.getElementById("footer-part");
   footerPart.classList.add('hidden');
 });
+
+// when continue select
+const continueBtn = document.getElementById('success-section');
+continueBtn.addEventListener('click',function(e){
+  const headerPart = document.getElementById("header-part");
+  headerPart.classList.remove("hidden");
+
+  const offerSection = document.getElementById("offer-section");
+  offerSection.classList.remove("hidden");
+
+  const functionalPart = document.getElementById("buy-tickets");
+  functionalPart.classList.remove("hidden");
+
+  const successLink = document.getElementById("success-section");
+  successLink.classList.add("hidden");
+
+  const footerPart = document.getElementById("footer-part");
+  footerPart.classList.remove("hidden");
+})
