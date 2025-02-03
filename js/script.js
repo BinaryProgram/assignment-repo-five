@@ -126,7 +126,7 @@ function updateGrandTotal(check) {
         "text-base",
         "font-medium",
       );
-      h3.innerText = "-" + beforeDiscount * 0.15;
+      h3.innerText = "-" + beforeDiscount * 0.20;
       document.getElementById("discount").append(h1, h2, h3);
     } else {
       alert("Apply a valid coupon!");
@@ -196,7 +196,7 @@ nextLink.addEventListener("click", function (e) {
 });
 
 // when continue select
-const continueBtn = document.getElementById('success-section');
+const continueBtn = document.getElementById('continue-btn');
 continueBtn.addEventListener('click',function(e){
   const headerPart = document.getElementById("header-part");
   headerPart.classList.remove("hidden");
