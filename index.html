@@ -43,7 +43,7 @@
 
   <body>
     <!-- navigation Header -->
-    <header class="container mx-auto">
+    <header id="header-part" class="container mx-auto">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -213,9 +213,9 @@
       </section>
     </header>
     <!-- main content -->
-    <main class="mt-10 md:mt-16 lg:mt-32">
+    <main id="main-part" class="mt-10 md:mt-16 lg:mt-32">
       <!-- offer section -->
-      <section class="container mx-auto">
+      <section id="offer-section" class="container mx-auto">
         <h2
           class="text-text-color text-center font-[raleway] text-3xl font-bold md:text-4xl lg:text-5xl"
         >
@@ -299,7 +299,7 @@
         </div>
       </section>
 
-      <!-- Functional part -->
+      <!-- Functional section -->
       <section
         class="border-green-color mt-24 rounded-[88px] border-t-2 bg-[#f7f8f8] p-4 md:mt-32 lg:mt-40 lg:p-16"
         id="buy-tickets"
@@ -934,7 +934,11 @@
                   placeholder="Enter your email id"
                 />
               </div>
-              <a id="welcome-link" href="/" class="pointer-events-none cursor-not-allowed">
+              <a
+                id="welcome-link"
+                href="#"
+                class="pointer-events-none cursor-not-allowed"
+              >
                 <button
                   id="next-btn"
                   class="btn btn-block mt-6 rounded-2xl font-[raleway] text-xl font-extrabold text-black transition duration-300 ease-in-out hover:bg-[#1dd100] hover:text-white disabled:bg-gray-300 disabled:text-gray-500"
@@ -958,9 +962,46 @@
           </article>
         </section>
       </section>
+
+      <!-- success section -->
+      <div id="success-section" class="hidden">
+        <section
+          class="bg-#fff mx-auto flex flex-col items-center justify-center rounded-xl bg-[#fff] p-5 md:w-3/4 lg:w-3/5 lg:p-20"
+        >
+          <div class="flex flex-col items-center justify-center space-y-9">
+            <figure>
+              <img src="./images/success.png" alt="success" />
+            </figure>
+            <p class="font-[roboto] text-3xl font-bold text-[#27ae60]">
+              success
+            </p>
+            <div class="flex flex-col items-center justify-center space-y-5">
+              <h1
+                class="text-center font-[roboto] text-xl font-semibold text-[#4a4a4a]"
+              >
+                Thank you for Booking Our Bus Seats. <br />
+                We are working hard to find the best service and deals for you.
+              </h1>
+              <h3
+                class="text-center font-[roboto] text-xl font-medium text-[#4a4a4a83]"
+              >
+                Shortly you will find a confirmation in your email.
+              </h3>
+              <a href="/">
+                <button
+                  class="btn btn-wide bg-[#27ae60] font-[roboto] text-xl font-semibold text-[#fff] hover:bg-[#27ae60]"
+                >
+                  Continue
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
+
     <!-- footer content -->
-    <footer class="mt-32 bg-[#030712] p-10 lg:p-32">
+    <footer id="footer-part" class="mt-32 bg-[#030712] p-10 lg:p-32">
       <section class="flex flex-col justify-between gap-10 lg:flex-row">
         <div class="space-y-8">
           <h3 class="font-[raleway] text-4xl font-extrabold text-white">
